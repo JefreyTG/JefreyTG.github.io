@@ -1,16 +1,12 @@
-// src/index.js
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';  // Importa los estilos globales si los tienes
+import ReactDOM from 'react-dom/client';
+import './index.css';
 import App from './App';
 
-ReactDOM.render(
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
-
-// Si estás interesado en medir el rendimiento de tu aplicación, puedes descomentar esta línea
-// Learn more: https://bit.ly/CRA-vitals
-

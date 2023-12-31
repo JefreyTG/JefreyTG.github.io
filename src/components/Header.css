@@ -1,9 +1,59 @@
-/* src/components/Header.css */
-.header-link {
-    transition: color 0.3s ease;
-  }
-  
-  .header-link:hover {
-    color: #ccc;
-  }
-  
+:root{
+  --gradient1:linear-gradient(120deg, #368f8b 0%,  #ddbea8 100%);
+  --beige:#f3dfc1;
+  --dark-blue:#160f29;
+  --dark-green: #246a73;
+  --mid-green:#368f8b;
+  --light-brown:#ddbea8;
+
+}
+
+
+.logo{
+  width: 100px;
+  height:auto;
+  border-radius: 15px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:fit-content;
+  background: var(--gradient1);
+  background-color: #333; /* Color de fondo de la barra de navegación */
+  padding: 1rem; /* Añade relleno para mejorar la apariencia */
+  z-index: 1000; /* Ajusta el índice Z para que esté por encima de otros elementos */
+  margin-bottom: 15px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color:var(--beige); /* Color del texto de los enlaces */
+  text-decoration: none; /* Elimina la decoración de subrayado de los enlaces */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5rem; /* Tamaño del texto de los enlaces */
+  transition: color 0.3s ease; /* Agrega transición al color del texto */
+}
+
+.nav-links a:hover {
+  color: var(--mid-green); /* Color del texto al pasar el ratón sobre los enlaces */
+  border-color:var(--beige);
+  border-radius: 5px;
+  background-color: var(--beige);
+  padding-bottom: 5px;
+}
+p.text-sm {
+  color:#368f8b;
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}

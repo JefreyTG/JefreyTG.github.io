@@ -1,0 +1,53 @@
+/* Home.css */
+.home-container {
+    max-width: 800px;
+    margin: 130px  auto;
+    margin-left: 0%;
+    padding: 20px;
+    
+  }
+  
+  .home-title {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .home-description {
+    margin-left: 0%;
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: left;
+
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .home-image{
+    margin-right: 0%;
+    float: right;
+  }
+  
+  .main-image {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+  }
+  /* Home.css */
+.tech-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  
+  .icon {
+    color: var(--dark-green); /* Color personalizado para los iconos */
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: var(--light-brown); /* Color al hacer hover sobre los iconos */
+  }
+  
