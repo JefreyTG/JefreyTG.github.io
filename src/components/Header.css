@@ -1,0 +1,9 @@
+/* src/components/Header.css */
+.header-link {
+    transition: color 0.3s ease;
+  }
+  
+  .header-link:hover {
+    color: #ccc;
+  }
+  
