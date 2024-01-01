@@ -1,18 +1,20 @@
-:root{
-  --gradient1:linear-gradient(120deg, #368f8b 0%,  #ddbea8 100%);
-  --beige:#f3dfc1;
-  --dark-blue:#160f29;
+:root {
+  --gradient1: linear-gradient(120deg, #368f8b 0%, #ddbea8 100%);
+  --beige: #f3dfc1;
+  --dark-blue: #160f29;
   --dark-green: #246a73;
-  --mid-green:#368f8b;
-  --light-brown:#ddbea8;
+  --mid-green: #368f8b;
+  --light-brown: #ddbea8;
+
 
 }
 
 
-.logo{
-  width: 100px;
-  height:auto;
+.logo {
+  width: 150px;
+  height: auto;
   border-radius: 15px;
+  margin-right: 20px;
 }
 
 .nav-bar {
@@ -20,40 +22,105 @@
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  padding-top: 0%;
+  padding-bottom: 0%;
   top: 0;
-  width: 100%;
-  height:fit-content;
-  background: var(--gradient1);
-  background-color: #333; /* Color de fondo de la barra de navegación */
-  padding: 1rem; /* Añade relleno para mejorar la apariencia */
-  z-index: 1000; /* Ajusta el índice Z para que esté por encima de otros elementos */
+  max-width: 100%;
+  height: 130px;
+  background-image: var(--gradient1);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  padding: 1rem;
+  /* Añade relleno para mejorar la apariencia */
+  z-index: 1000;
+  /* Ajusta el índice Z para que esté por encima de otros elementos */
   margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 .nav-links {
+  height: 40px;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .nav-links a {
-  color:var(--beige); /* Color del texto de los enlaces */
-  text-decoration: none; /* Elimina la decoración de subrayado de los enlaces */
+  text-decoration: none;
+  /* Elimina la decoración de subrayado de los enlaces */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.5rem; /* Tamaño del texto de los enlaces */
-  transition: color 0.3s ease; /* Agrega transición al color del texto */
+  font-size: 25px;
+  /* Tamaño del texto de los enlaces */
+  font-weight: 400;
+  transition: color 0.3s ease;
+  /* Agrega transición al color del texto */
+
 }
 
-.nav-links a:hover {
-  color: var(--mid-green); /* Color del texto al pasar el ratón sobre los enlaces */
-  border-color:var(--beige);
-  border-radius: 5px;
-  background-color: var(--beige);
-  padding-bottom: 5px;
+a.home-link:hover {
+  border-bottom: 2px solid #160f29;
+
+  font-size: 30px;
+  color: var(--light-brown);
+  transition: 0.5s;
+
 }
+
+a.projects-link:hover {
+  border-bottom: 2px solid #160f29;
+
+  font-size: 30px;
+  color: var(--light-brown);
+  transition: 0.5s;
+
+}
+
+a.services-link:hover {
+  border-bottom: 2px solid #160f29;
+  font-size: 30px;
+  color: var(--light-brown);
+  transition: 0.5s;
+
+}
+a.videos-link:hover {
+  border-bottom: 2px solid #160f29;
+   
+   font-size: 30px;
+   color: var(--light-brown);
+   transition: 0.5s;
+  
+ }
+ a.about-me-link:hover {
+  border-bottom: 2px solid #160f29;
+   
+   font-size: 30px;
+   color: var(--light-brown);
+   transition: 0.5s;
+  
+ }
+ a.contact-link:hover {
+  border-bottom: 2px solid #160f29;
+   
+   font-size: 30px;
+   color: var(--light-brown);
+   transition: 0.5s;
+  
+ }
+
 p.text-sm {
-  color:#368f8b;
-  font-size: 2rem;
-  font-weight: 400;
+  margin-left: 40px;
+  font-size: 1.5rem;
+  font-weight: 600;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }

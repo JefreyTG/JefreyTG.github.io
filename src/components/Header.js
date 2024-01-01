@@ -8,16 +8,16 @@ const Header = () => {
   return (
     <header className="bg-gray-800 text-white p-4">
       <nav className="nav-bar">
-        <Link to="/home">
+        <Link to="/home" className="logo-home-link">
           <img src={logo} alt="Logo" className="logo" />
         </Link>
         <div className="nav-links">
-          <Link to="/home" className="hover:text-gray-300">Home</Link>
-          <Link to="/projects" className="hover:text-gray-300">Projects</Link>
-          <Link to="/services" className="hover:text-gray-300">Services</Link>
-          <Link to="/videos" className="hover:text-gray-300">Videos</Link>
-          <Link to="/about-me" className="hover:text-gray-300">About Me</Link>
-          <Link to="/contact" className="hover:text-gray-300">Contact</Link>
+          <Link to="/home" className="home-link">Home</Link>
+          <Link to="/projects" className="projects-link">Projects</Link>
+          <Link to="/services" className="services-link">Services</Link>
+          <Link to="/videos" className="videos-link">Videos</Link>
+          <Link to="/about-me" className="about-me-link">About Me</Link>
+          <Link to="/contact" className="contact-link">Contact</Link>
         </div>
         <p className="text-sm">WEB DEVELOPER</p>
       </nav>
