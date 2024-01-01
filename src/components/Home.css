@@ -1,53 +1,64 @@
-/* Home.css */
 .home-container {
-    max-width: 1600px;
-    margin: 130px  auto;
-    margin-left: 0%;
-    padding: 20px;
-    
-  }
-  
-  .home-title {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  max-width: 1100px;
+  margin-top: 130px;
+  margin-right: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en una nueva línea si no hay espacio suficiente */
+}
 
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .home-description {
-    margin-left: 0%;
-    font-size: 1.2rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    justify-content: left;
 
-    color: #666;
-    margin-bottom: 20px;
-  }
-  .home-image{
-    margin-right: 0%;
-    float: right;
-  }
-  
-  .main-image {
-    max-width: 400px;
-    height: auto;
-    border-radius: 8px;
-  }
+
+.home-title {
+  color: var(--dark-green);
+  max-width: fit-content;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 10px;
+}
+
+.home-description {
+  max-width: 400px;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #666;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.home-image {
+  width: 400px;
+  height: auto;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.main-image {
+  display: flex;
+  width: 400px; /* Haz que la imagen ocupe el 100% del contenedor */
+  height: auto;
+  border-radius: 8px;
+}
   /* Home.css */
 .tech-icons {
+    width: 500px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 40px;
   }
   
   .icon {
+    width: 45px;
+    height: 45px;
     color: var(--dark-green); /* Color personalizado para los iconos */
     transition: color 0.3s ease;
   }
   
   .icon:hover {
+    width: 55px;
+    height: auto;
     color: var(--light-brown); /* Color al hacer hover sobre los iconos */
   }
   

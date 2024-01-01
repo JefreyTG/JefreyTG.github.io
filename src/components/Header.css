@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: 600;
   position: fixed;
   padding-top: 0%;
   padding-bottom: 0%;
@@ -59,9 +60,9 @@
   text-decoration: none;
   /* Elimina la decoración de subrayado de los enlaces */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 25px;
-  /* Tamaño del texto de los enlaces */
-  font-weight: 400;
+  font-size: 25px;/* Tamaño del texto de los enlaces */
+  font-weight: 600;
+  justify-content: space-between;
   transition: color 0.3s ease;
   /* Agrega transición al color del texto */
 
