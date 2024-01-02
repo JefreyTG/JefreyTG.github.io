@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+div.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.card {
+    
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.8s;
+}
+
+.face.front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+    z-index: 1;
+}
+
+.front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.face.front h1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 1.5rem;
+    justify-content: center;
+    text-wrap: wrap;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--beige);
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.face.back {
+    background: rgba(3, 35, 54);
+    padding: 15px;
+    color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px var(--beige);
+}
+
+.face.back h2 {
+    font-size: 20px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.face.back p {
+    letter-spacing: 1px;
+}
+
+div.face.front:hover {
+    transform: perspective(600px) rotateY(180deg);
+    
+}
+
+div.face.back:hover {
+    transform: perspective(600px) rotateY(0deg);
+    z-index: 100;
+    
+}

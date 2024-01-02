@@ -1,9 +1,12 @@
 // Home.js
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3, faJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import './Home.css';
 import mainImage from "../images/istockphoto-1856888927-1024x1024.jpg"
+import htmlLogo from'../images/logos/html-logo.png';
+import jsLogo from '../images/logos/js-logo.png';
+import cssLogo from '../images/logos/css-logo.png';
+import reactLogo from '../images/logos/react-logo.png';
+import nodejsLogo from '../images/logos/nodejs-logo.png';
 
 const Home = () => {
   return (
@@ -18,11 +21,12 @@ const Home = () => {
   <img src={mainImage} alt="Mi Imagen" className="main-image" />
 </div>
      
-      <div className="tech-icons">
-        <FontAwesomeIcon icon={faHtml5} size="3x" className="icon" />
-        <FontAwesomeIcon icon={faCss3} size="3x" className="icon" />
-        <FontAwesomeIcon icon={faJs} size="3x" className="icon" />
-        <FontAwesomeIcon icon={faReact} size="3x" className="icon" />
+<div className="tech-icons">
+        <img src={htmlLogo} alt="HTML5 Icon" className="icon" />
+        <img src={cssLogo} alt="CSS Icon" className="icon" />
+        <img src={jsLogo} alt="JavaScript Icon" className="icon" />
+        <img src={reactLogo} alt="React Icon" className="icon" />
+        <img src={nodejsLogo} alt='NodeJS Icon' className='icon'/>
       </div>
     </div>
   );

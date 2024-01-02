@@ -9,15 +9,40 @@
 
 }
 
-
+header.header{
+  width: fit-content;
+  height: auto;
+  background: #160f29;
+}
 .logo {
-  width: 150px;
+  width: 90px;
   height: auto;
   border-radius: 15px;
   margin-right: 20px;
 }
 
 .nav-bar {
+  display: flex;
+  background: var(--gradient1);
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  position: fixed;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  top: 0;
+  max-width: 100%;
+  height: 60px;
+  border-radius: 20px;
+  padding: 1rem;
+  z-index: 1000;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+
+.nav-bar.scrolled {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,21 +52,22 @@
   padding-bottom: 0%;
   top: 0;
   max-width: 100%;
-  height: 130px;
-  background-image: var(--gradient1);
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 4s linear infinite;
+  height: 90px;
+  border-radius: 20px;
+  /* Cambia la ruta a la ubicación de tu imagen de fondo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
   padding: 1rem;
   /* Añade relleno para mejorar la apariencia */
-  z-index: 1000;
+
   /* Ajusta el índice Z para que esté por encima de otros elementos */
+  z-index: 1000;
   margin-bottom: 15px;
   margin-left: 15px;
+  transition: box-shadow 0.4s ease;
+}
+
+.nav-bar.scrolled-top {
+  animation: textclip 6s linear infinite; /* Agrega la animación solo cuando esté en la parte superior */
 }
 
 @keyframes textclip {
@@ -50,18 +76,21 @@
   }
 }
 
+
 .nav-links {
   height: 40px;
+  width: max-content;
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
 .nav-links a {
   text-decoration: none;
-  /* Elimina la decoración de subrayado de los enlaces */
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 25px;/* Tamaño del texto de los enlaces */
+  font-size: 1.3rem;
   font-weight: 600;
+  color: var(--beige);
   justify-content: space-between;
   transition: color 0.3s ease;
   /* Agrega transición al color del texto */
@@ -69,59 +98,66 @@
 }
 
 a.home-link:hover {
-  border-bottom: 2px solid #160f29;
-
-  font-size: 30px;
+  border-radius: 5px;
+  background-color:rgba(0, 0, 0, 0.2);
+  font-size: 1.4rem;
   color: var(--light-brown);
   transition: 0.5s;
 
 }
 
 a.projects-link:hover {
-  border-bottom: 2px solid #160f29;
-
-  font-size: 30px;
+  border-radius: 5px;
+  background-color:rgba(0, 0, 0, 0.2);
+  font-size: 1.4rem;
   color: var(--light-brown);
   transition: 0.5s;
 
 }
 
 a.services-link:hover {
-  border-bottom: 2px solid #160f29;
-  font-size: 30px;
+  border-radius: 5px;
+  background-color:rgba(0, 0, 0, 0.2);
+  font-size: 1.4rem;
   color: var(--light-brown);
   transition: 0.5s;
 
+
 }
 a.videos-link:hover {
-  border-bottom: 2px solid #160f29;
-   
-   font-size: 30px;
-   color: var(--light-brown);
-   transition: 0.5s;
+  border-radius: 5px;
+  background-color:rgba(0, 0, 0, 0.2);
+  font-size: 1.4rem;
+  color: var(--light-brown);
+  transition: 0.5s;
+
   
  }
  a.about-me-link:hover {
-  border-bottom: 2px solid #160f29;
-   
-   font-size: 30px;
-   color: var(--light-brown);
-   transition: 0.5s;
+  border-radius: 5px;
+  background-color:rgba(0, 0, 0, 0.2);
+  font-size: 1.4rem;
+  color: var(--light-brown);
+  transition: 0.5s;
+
   
  }
  a.contact-link:hover {
-  border-bottom: 2px solid #160f29;
-   
-   font-size: 30px;
-   color: var(--light-brown);
-   transition: 0.5s;
+  border-radius: 5px;
+  background-color:rgba(0, 0, 0, 0.2);
+  font-size: 1.4rem;
+  color: var(--light-brown);
+  transition: 0.5s;
+
   
  }
 
 p.text-sm {
   margin-left: 40px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  display: inline-block; /* Asegura que las letras se comporten como bloques en la animación */
+
 
 }

@@ -1,12 +1,33 @@
 // Header.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../images/tech-ter-logo3.svg';
 import './Header.css';
 
+
+
 const Header = () => {
+  useEffect(()=>{
+    const navBar = document.querySelector('.nav-bar');
+
+    const handleScroll=()=>{
+      if (window.scrollY > 0) {
+        navBar.classList.add('scrolled');
+      } else {
+        navBar.classList.remove('scrolled');
+      }
+    };
+
+      window.addEventListener('scroll', handleScroll);
+
+      return()=>{
+        window.removeEventListener('scroll', handleScroll);
+    };   
+  }, [])
+
+
   return (
-    <header className="bg-gray-800 text-white p-4">
+    <header className="header">
       <nav className="nav-bar">
         <Link to="/home" className="logo-home-link">
           <img src={logo} alt="Logo" className="logo" />
@@ -24,5 +45,6 @@ const Header = () => {
     </header>
   );
 };
+
 
 export default Header;
