@@ -1,10 +1,11 @@
 :root {
-  --gradient1: linear-gradient(120deg, #368f8b 0%, #ddbea8 100%);
+  --gradient1: linear-gradient(120deg, #f4f4f9 0%, #246a73 100%);
   --beige: #f3dfc1;
   --dark-blue: #160f29;
   --dark-green: #246a73;
   --mid-green: #368f8b;
   --light-brown: #ddbea8;
+  --mid-brown: #a99985;
 
 
 }
@@ -90,11 +91,16 @@ header.header{
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--beige);
   justify-content: space-between;
   transition: color 0.3s ease;
   /* Agrega transición al color del texto */
 
+}
+a.home-link, a.projects-link, a.services-link{
+  color: var(--mid-brown);
+}
+a.videos-link, a.about-me-link, a.contact-link{
+  color: var(--light-brown)
 }
 
 a.home-link:hover {

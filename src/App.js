@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import Services from './components/Services'
-
+import Videos from './components/Videos';
 const App = () => {
   return (
    
@@ -13,6 +13,7 @@ const App = () => {
         <Routes>
         <Route path='/home' element={<Home/>} />
         <Route path='/services' element={<Services />} />
+        <Route path='videos' element={<Videos />}/>
         </Routes>
     
     </Router>
