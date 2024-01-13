@@ -1,11 +1,13 @@
 :root {
   --gradient1: linear-gradient(110deg, #000000 80%, #fdffff 20%);
+  --gradient1: linear-gradient(225deg, #000000 50%, #fdffff 50%);
   --beige: #f3dfc1;
   --dark-blue: #160f29;
   --dark-green: #246a73;
   --mid-green: #368f8b;
   --light-brown: #ddbea8;
   --mid-brown: #a99985;
+  --dark-red:rgb(158, 10, 10);
 
 
 }
@@ -159,12 +161,15 @@ a.videos-link:hover {
  }
 
 p.text-sm {
-  margin-left: 40px;
+  margin-left: 45px;
   font-size: 1.8rem;
   font-weight: 600;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: red;
+  font-family: 'Agbalumo', system-ui;
+  color: var(--dark-red);
   display: inline-block; /* Asegura que las letras se comporten como bloques en la animación */
 
 
+}
+p.text-sm:hover{
+  color:rgb(199, 3, 3);
 }

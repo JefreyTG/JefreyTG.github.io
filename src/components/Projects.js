@@ -7,7 +7,7 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'Project 1',
+      title: 'Hotel Landing Page',
       description: 'This HTML code defines the structure of a web page for the "Grand Hotel." It includes a navigation menu with links and social media, along with a main area that showcases the hotel\'s welcome, a descriptive paragraph, and a button to view rooms and rates.',
       technologies: ['HTML', 'CSS'],
       link: 'https://jefreytg.github.io/simple-hotel-landingpage/', // Agrega el enlace del proyecto aquí
@@ -34,7 +34,7 @@ const Projects = () => {
 
   return (
     <div className="projects-container">
-      <h2>Mis Proyectos</h2>
+      <h2>My Proyects</h2>
       <div className="project-list">
         {projects.map((project) => (
           <div key={project.id} className="project-card">
@@ -45,10 +45,10 @@ const Projects = () => {
               {project.technologies.join(', ')}
             </div>
             <a href={project.link} target="_blank" rel="noopener noreferrer">
-              Ver Proyecto
+              Go to the Project
             </a>
             {/* Alternatively, you can use a button for a modal */}
-            <button onClick={() => handleProjectClick(project)}>Ver Preview</button>
+            <button onClick={() => handleProjectClick(project)}>Preview</button>
           </div>
         ))}
       </div>
@@ -59,7 +59,13 @@ const Projects = () => {
             <span className="close" onClick={handleCloseModal}>&times;</span>
             <h2>{selectedProject.title}</h2>
             <p>{selectedProject.description}</p>
-            {/* Add more project details as needed */}
+            <iframe 
+            title='Project Preview'
+            src={selectedProject.link}
+            width='100%'
+            height='500px'
+            frameBorder='0'
+            />            
           </div>
         </div>
       )}
