@@ -4,6 +4,7 @@
 
 html{
   max-width: fit-content;
+  scroll-behavior: smooth;
 }
 
 
@@ -48,15 +49,16 @@ html{
   height: auto;
   margin-top: 5px;
   margin-left: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .main-image {
   display: flex;
-  width: 400px; /* Haz que la imagen ocupe el 100% del contenedor */
+  width: 350px; /* Haz que la imagen ocupe el 100% del contenedor */
   height: auto;
   margin-top: 10px;
-  border-radius: 8px;margin-left: 60px;
+  border-radius: 8px;
+  margin-left: 40px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
   margin-bottom: 15px;
 
@@ -74,19 +76,22 @@ html{
   }
   
   .icon {
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     opacity: 60%;
     transition: color 0.5s ease;
     margin-right: 60px;
-    margin-top: 0%;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
   .icon:hover {
   
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
     opacity: 100%;
+    margin-top:0;
+    margin-bottom: 0;
     transition: 0.5s;
     z-index: 100;
   }

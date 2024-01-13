@@ -1,5 +1,5 @@
 :root {
-  --gradient1: linear-gradient(120deg, #f4f4f9 0%, #246a73 100%);
+  --gradient1: linear-gradient(110deg, #000000 80%, #fdffff 20%);
   --beige: #f3dfc1;
   --dark-blue: #160f29;
   --dark-green: #246a73;
@@ -16,7 +16,7 @@ header.header{
   background: #160f29;
 }
 .logo {
-  width: 90px;
+  width: 60px;
   height: auto;
   border-radius: 15px;
   margin-right: 20px;
@@ -97,10 +97,10 @@ header.header{
 
 }
 a.home-link, a.projects-link, a.services-link{
-  color: var(--mid-brown);
+  color: var(--light-brown);
 }
 a.videos-link, a.about-me-link, a.contact-link{
-  color: var(--light-brown)
+  color: var(--mid-brown)
 }
 
 a.home-link:hover {
@@ -163,6 +163,7 @@ p.text-sm {
   font-size: 1.8rem;
   font-weight: 600;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: red;
   display: inline-block; /* Asegura que las letras se comporten como bloques en la animación */
 
 

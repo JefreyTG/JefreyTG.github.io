@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Services from './components/Services'
 import Videos from './components/Videos';
+import Projects from './components/Projects';
 const App = () => {
   return (
    
@@ -13,7 +14,8 @@ const App = () => {
         <Routes>
         <Route path='/home' element={<Home/>} />
         <Route path='/services' element={<Services />} />
-        <Route path='videos' element={<Videos />}/>
+        <Route path='/videos' element={<Videos />}/>
+        <Route path='/projects' element={<Projects />}/>
         </Routes>
     
     </Router>

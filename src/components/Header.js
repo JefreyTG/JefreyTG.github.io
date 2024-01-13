@@ -1,7 +1,7 @@
 // Header.js
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../images/tech-ter-logo3.svg';
+import logo from '../images/tg-tech-logo4.svg';
 import './Header.css';
 
 
