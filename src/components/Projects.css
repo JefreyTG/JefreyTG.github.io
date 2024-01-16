@@ -81,8 +81,8 @@ body {
     transition: 0.3s;
   }
   div.project-card button:hover{
-    color: red;
-    box-shadow: 2px 4px rgba(255, 0, 0, 0.3) ;
+    color: var(--dark-green);
+    box-shadow: 2px 4px var(--dark-green) ;
 
   }
   /* Modal styles */

@@ -98,10 +98,10 @@ header.header{
   /* Agrega transición al color del texto */
 
 }
-a.home-link, a.projects-link, a.services-link{
+a.home-link, a.projects-link, a.videos-link, a.services-link{
   color: var(--light-brown);
 }
-a.videos-link, a.about-me-link, a.contact-link{
+a.about-me-link, a.contact-link{
   color: var(--mid-brown)
 }
 
@@ -171,5 +171,5 @@ p.text-sm {
 
 }
 p.text-sm:hover{
-  color:rgb(199, 3, 3);
+  color:rgb(219, 3, 3);
 }
