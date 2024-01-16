@@ -13,12 +13,13 @@ const Projects = () => {
       link: 'https://jefreytg.github.io/simple-hotel-landingpage/', // Agrega el enlace del proyecto aquí
       // ... other fields as needed
     },
+
     {
       id: 2,
-      title: 'Project 2',
+      title: 'Photographic Portfolio',
       description: 'Description of project 2.',
-      technologies: ['Node.js', 'Express', 'MongoDB'],
-      link: 'https://example.com/project2', // Agrega el enlace del proyecto aquí
+      technologies: ['CSS', 'HTML'],
+      link: 'https://jefreytg.github.io/photography-portfolio/index.html', // Agrega el enlace del proyecto aquí
       // ... other fields as needed
     },
     // Add more projects as necessary
