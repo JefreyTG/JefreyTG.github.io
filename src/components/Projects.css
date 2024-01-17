@@ -1,10 +1,7 @@
-body {
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-  }
+
   div.projects-container{
-    margin-top: 80px;
+    width: 100%;
+    margin-top: 120px;
   }
   div.project-card {
     width: fit-content;
@@ -13,32 +10,32 @@ body {
     flex-direction: column;
     margin: 20px;
     padding: 10px;
-    background: rgba(221, 190, 168, 0.2);
+    background: rgba(221, 190, 168, 0.1);
     border-radius: 15px;
     box-shadow: 3px 5px rgba(0, 0, 0, 0.3);
   }
   
-  h2, h3 {
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
+  
   
   h2 {
     color: var(--dark-green);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 600;
-    font-size: 35px;
+    font-size: 3rem;
     text-align: center;
+    margin-bottom: 30px;
   }
   h3{
+    font-size: 2.2rem;
     font-weight: 600;
-    margin-top: 25px;
+    margin-top: 15px;
     margin-bottom: 30px;
     align-items: center;
     text-align: center;
   }
   
   .projects-container p {
-    width: 400px;
+    width: 600px;
     height: fit-content;
     margin-bottom: 20px;
     font-size: 20px;
@@ -66,13 +63,13 @@ body {
   }
   
   div.project-card button{
-    width: fit-content;
-    height: auto;
+    width: 95px;
+    height:45px;
     margin: 15px;
-    padding: 5px;
+    padding: 10px;
     align-self: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--dark-red);
     border-radius: 15px;
@@ -83,6 +80,7 @@ body {
   div.project-card button:hover{
     color: var(--dark-green);
     box-shadow: 2px 4px var(--dark-green) ;
+    font-size: 1.3rem;
 
   }
   /* Modal styles */

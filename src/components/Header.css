@@ -13,18 +13,24 @@
 }
 
 header.header{
-  width: fit-content;
-  height: auto;
-  background: #160f29;
+  position: absolute;
+  align-items: center;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #160f2918;
+  border-radius: 15px;
 }
 .logo {
-  width: 60px;
-  height: auto;
+  width: 100px;
+  height: 80px;
   border-radius: 15px;
-  margin-right: 20px;
+  margin-left: 0%;
 }
 
-.nav-bar {
+nav.nav-bar {
+  width: 100%;
+  height: 80px;
   display: flex;
   background: var(--gradient1);
   align-items: center;
@@ -35,12 +41,11 @@ header.header{
   padding-bottom: 0%;
   top: 0;
   max-width: 100%;
-  height: 60px;
   border-radius: 20px;
-  padding: 1rem;
+  
   z-index: 1000;
   margin-bottom: 15px;
-  margin-left: 15px;
+  margin-left: 0%;
   transition: box-shadow 0.3s ease;
 }
 
@@ -57,15 +62,10 @@ header.header{
   max-width: 100%;
   height: 90px;
   border-radius: 20px;
-  /* Cambia la ruta a la ubicación de tu imagen de fondo */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-  padding: 1rem;
-  /* Añade relleno para mejorar la apariencia */
-
-  /* Ajusta el índice Z para que esté por encima de otros elementos */
   z-index: 1000;
   margin-bottom: 15px;
-  margin-left: 15px;
+  margin-left: 0%;
   transition: box-shadow 0.4s ease;
 }
 
@@ -91,10 +91,11 @@ header.header{
 .nav-links a {
   text-decoration: none;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
   justify-content: space-between;
   transition: color 0.3s ease;
+  margin-left: 30px;
   /* Agrega transición al color del texto */
 
 }
@@ -106,63 +107,74 @@ a.about-me-link, a.contact-link{
 }
 
 a.home-link:hover {
-  border-radius: 5px;
-  background-color:rgba(0, 0, 0, 0.2);
-  font-size: 1.4rem;
-  color: var(--light-brown);
+  border-radius: 9px;
+  padding: 5px 5px;
+  background-color:rgba(201, 186, 186, 0.205);
+  font-size: 2.4rem;
+  color: var(--mid-green);
+  filter: brightness(116%);
   transition: 0.5s;
 
 }
 
 a.projects-link:hover {
-  border-radius: 5px;
-  background-color:rgba(0, 0, 0, 0.2);
-  font-size: 1.4rem;
-  color: var(--light-brown);
+  border-radius: 9px;
+  padding: 5px 5px;
+  font-size: 2.4rem;
+  color: var(--mid-green);
+  background-color:rgba(201, 186, 186, 0.205);
+  filter: brightness(116%);
   transition: 0.5s;
 
 }
 
 a.services-link:hover {
-  border-radius: 5px;
-  background-color:rgba(0, 0, 0, 0.2);
-  font-size: 1.4rem;
-  color: var(--light-brown);
+  border-radius: 9px;
+  padding: 5px 5px;
+  font-size: 2.4rem;
+  color: var(--mid-green);
+  background-color:rgba(201, 186, 186, 0.205);
+  filter: brightness(116%);
   transition: 0.5s;
 
 
 }
 a.videos-link:hover {
-  border-radius: 5px;
-  background-color:rgba(0, 0, 0, 0.2);
-  font-size: 1.4rem;
-  color: var(--light-brown);
+  border-radius: 9px;
+  padding: 5px 5px;
+  font-size: 2.4rem; 
+  color: var(--mid-green);
+  background-color:rgba(201, 186, 186, 0.205);
+  filter: brightness(116%);
   transition: 0.5s;
 
-  
  }
  a.about-me-link:hover {
-  border-radius: 5px;
-  background-color:rgba(0, 0, 0, 0.2);
-  font-size: 1.4rem;
-  color: var(--light-brown);
+  border-radius: 9px;
+  padding: 5px 5px;
+  font-size: 2.4rem;
+  color: var(--mid-green);
+  background-color:rgba(201, 186, 186, 0.205);
+  filter: brightness(116%);
   transition: 0.5s;
 
   
  }
  a.contact-link:hover {
-  border-radius: 5px;
-  background-color:rgba(0, 0, 0, 0.2);
-  font-size: 1.4rem;
-  color: var(--light-brown);
+  border-radius: 9px;
+  padding: 5px 5px;
+  font-size: 2.4rem;
+  color: var(--mid-green);
+  background-color:rgba(201, 186, 186, 0.205);
+  filter: brightness(116%);
   transition: 0.5s;
 
-  
  }
 
 p.text-sm {
-  margin-left: 45px;
-  font-size: 1.8rem;
+  width: fit-content;
+  margin-right: 30px;
+  font-size: 2rem;
   font-weight: 600;
   font-family: 'Agbalumo', system-ui;
   color: var(--dark-red);

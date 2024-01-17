@@ -12,17 +12,19 @@ body {
     justify-content: center;
     min-height: 100vh;
 }
-div.cards-container{
-    width: 850px;
-    margin-top: 80px;
+
+div.cards-container {
+    width: 100%;
+    margin-top: 120px;
     display: flex;
     flex-wrap: wrap;
 }
+
 div.card {
-    
+
     position: relative;
-    width: 250px;
-    height: 300px;
+    width: 350px;
+    height: 400px;
     margin: 10px;
 }
 
@@ -65,34 +67,39 @@ div.card {
     text-align: center;
 }
 
-.face.back {
+div.face.back {
     background: rgba(3, 35, 54);
     padding: 15px;
     color: var(--beige);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
+    align-items: center;
     box-shadow: 0 5px 10px var(--beige);
 }
 
 .face.back h2 {
-    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
     margin-top: 10px;
     letter-spacing: 2px;
 }
 
 .face.back p {
-   letter-spacing: 1px;
+    text-align: center;
+    width: 325px;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
 }
 
 div.face.front:hover {
     transform: perspective(600px) rotateY(180deg);
-    
+
 }
 
 div.face.back:hover {
     transform: perspective(600px) rotateY(0deg);
     z-index: 100;
-    
+
 }
