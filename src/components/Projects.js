@@ -17,7 +17,7 @@ const Projects = () => {
     {
       id: 2,
       title: 'Photographic Portfolio',
-      description: 'Description of project 2.',
+      description: 'This is a Photographic Portfolio website created using CSS, HTML, it is a responsive website were you can navigate to all the different sections',
       technologies: ['CSS', 'HTML'],
       link: 'https://jefreytg.github.io/photography-portfolio/index.html', // Agrega el enlace del proyecto aquí
       // ... other fields as needed

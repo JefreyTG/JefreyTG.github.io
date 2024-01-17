@@ -23,7 +23,7 @@ const Videos = () => {
 
   return (
     <div className="videos-container">
-      <h2>Videos sobre Desarrollo Web</h2>
+      <h2>WEB DEVELOPMENT VIDEOS</h2>
       <ul>
         {videos.map(video => (
           <li key={video.id.videoId} className="video-card">

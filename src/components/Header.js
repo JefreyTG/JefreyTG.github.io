@@ -6,6 +6,7 @@ import './Header.css';
 
 
 
+
 const Header = () => {
   useEffect(()=>{
     const navBar = document.querySelector('.nav-bar');
@@ -42,6 +43,7 @@ const Header = () => {
         </div>
         <p className="text-sm">WEB DEVELOPER</p>
       </nav>
+      
     </header>
   );
 };

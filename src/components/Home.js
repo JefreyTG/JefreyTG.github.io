@@ -8,6 +8,7 @@ import cssLogo from '../images/logos/css-logo.png';
 import reactLogo from '../images/logos/react-logo.png';
 import nodejsLogo from '../images/logos/nodejs-logo.png';
 
+
 const Home = () => {
   return (
     <div className="home-container">
@@ -32,4 +33,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home; 

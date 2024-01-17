@@ -7,11 +7,14 @@
   }
   
   .videos-container h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--mid-green);
+    margin-bottom: 20px;
   }
 
   .video-card {
+    width: fit-content;
+    height: fit-content;
     background-color: var(--beige);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -30,6 +33,7 @@
   }
   
   .video-title {
+    width: 400px;
     color: var(--dark-blue);
     font-size: 20px;
     margin-bottom: 10px;
