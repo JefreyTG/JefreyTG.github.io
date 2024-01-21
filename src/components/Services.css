@@ -1,3 +1,17 @@
+
+
+@font-face {
+    font-family: 'DecoTech' ;
+    src: url('../fonts/decotech_2/DecoTech.ttf') format('truetype');
+  } 
+  @font-face{
+    font-family: 'RapidtechDemo';
+    src: url('../fonts/rapidtech/RapidtechDemoRegular.ttf') format('truetype');
+  }
+  @font-face {
+    font-family:'RETROTECH' ;
+    src: url('../fonts/retrotech/RETROTECH.ttf') format('truetype');
+  }
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +25,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background: var(--gray);
 }
 
 div.cards-container {
@@ -61,8 +76,8 @@ div.card {
     font-size: 1.5rem;
     justify-content: center;
     text-wrap: wrap;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: var(--beige);
+    font-family: 'RapidtechDemo' sans-serif;
+    color: var(--light-gray);
     background: rgba(0, 0, 0, 0.4);
     text-align: center;
 }
@@ -70,7 +85,7 @@ div.card {
 div.face.back {
     background: rgba(3, 35, 54);
     padding: 15px;
-    color: var(--beige);
+    color: yellowgreen;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -80,13 +95,14 @@ div.face.back {
 }
 
 .face.back h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'RapidtechDemo', sans-serif;
     font-size: 2rem;
     margin-top: 10px;
     letter-spacing: 2px;
 }
 
 .face.back p {
+    font-family: 'DecoTech', sans-serif;
     text-align: center;
     width: 325px;
     letter-spacing: 2px;

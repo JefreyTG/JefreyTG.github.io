@@ -11,6 +11,10 @@
   font-family:'RETROTECH' ;
   src: url('../fonts/retrotech/RETROTECH.ttf') format('truetype');
 }
+@font-face {
+  font-family:'AR Techni' ;
+  src: url('../fonts/ar_techni/AR\ Techni.ttf');
+}
 html{
   max-width: fit-content;
   scroll-behavior: smooth;
@@ -23,7 +27,7 @@ html{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color:var(--gray) ;
+  background-color:white ;
   margin-top: 20px;
   padding-left: 40px;
   padding: 20px;
@@ -41,7 +45,7 @@ html{
 h1.home-title {
   color: yellowgreen;
   max-width: fit-content;
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: 400;
   font-family:'RETROTECH', sans-serif;
   letter-spacing: 2px;
@@ -51,12 +55,14 @@ h1.home-title {
 }
 
 p.home-description {
-  max-width: 400px;
+  max-width: 450px;
   font-size: 1.2rem;
-  font-family: 'RapidtechDemo', sans-serif;
+  font-family: 'Exo', sans-serif;
+  font-weight: 300;
   color:var(--light-gray);
-  background: rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 2px var(--orange);
+  background:black;
+  box-shadow: 1px 2px 2px var(--orange);
+  border-radius: 5%;
   margin-right: 30px;
   margin-left: 30px;
   margin-bottom: 40px;

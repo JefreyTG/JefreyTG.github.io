@@ -1,3 +1,20 @@
+
+@font-face {
+  font-family: 'DecoTech' ;
+  src: url('../fonts/decotech_2/DecoTech.ttf') format('truetype');
+} 
+@font-face{
+  font-family: 'RapidtechDemo';
+  src: url('../fonts/rapidtech/RapidtechDemoRegular.ttf') format('truetype');
+}
+@font-face {
+  font-family:'RETROTECH' ;
+  src: url('../fonts/retrotech/RETROTECH.ttf') format('truetype');
+}
+@font-face {
+  font-family:'AR Techni' ;
+  src: url('../fonts/ar_techni/AR\ Techni.ttf');
+}
 html{
   width: 100%;
   height: auto;
@@ -5,90 +22,106 @@ html{
  body{
   width: 100%;
   height: auto;
+  background: white;
  }
  
  div.projects-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:25px;
+  width: 100%;
+  margin-top: 120px;
+  }
+  div.projects-container h2 {
     width: 100%;
-    margin-top: 120px;
-  }
-  div.project-card {
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    padding: 10px;
-    background: rgba(221, 190, 168, 0.1);
-    border-radius: 15px;
-    box-shadow: 3px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  
-  
-  h2 {
-    color: var(--dark-green);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 600;
-    font-size: 3rem;
+    color:yellowgreen;
+    font-family:'RETROTECH', sans-serif;
+    font-weight: 400;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
   }
-  h3{
+  div.project-list{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div.project-card {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background: black;
+    border-radius: 15px;
+    box-shadow: 1px 2px yellowgreen;
+  }
+  
+  
+  
+  
+  div.project-card h3{
+    color: yellowgreen;
+    font-family: 'Exo', sans-serif;
     font-size: 2.2rem;
-    font-weight: 600;
+    font-weight: 400;
     margin-top: 15px;
     margin-bottom: 30px;
     align-items: center;
     text-align: center;
   }
   
-  .projects-container p {
-    width: 600px;
+  .project-card p {
+    color: var(--light-gray);
+    width: 400px;
     height: fit-content;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 1rem;
     text-align: justify;
     
   }
   div.project-card div{
     text-align: center;
     font-size: 20px;
-    color: var(--dark-red);
+    color: var(--orange);
     font-family: 'Exo', sans-serif;
     margin: 5px;
 
   }
   div.project-card a{
+    color: rgb(20, 141, 255);
     width: fit-content;
     height: auto;
     margin: 10px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: underline;
   }
   div.project-card a:hover{
-    color: blue;
+   filter: brightness(150%);
   }
   
   div.project-card button{
-    width: 95px;
-    height:45px;
+    width: fit-content;
+    height:auto;
     margin: 15px;
-    padding: 10px;
+    padding: 5px;
     align-self: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--dark-red);
+    font-family: 'Exo', sans-serif;    
+    font-size: 1rem;
+    font-weight: 500;
+    color: yellowgreen;
     border-radius: 15px;
     box-shadow: 2px 3px rgba(29, 28, 28, 0.233);
     background: var(--gradient1) ;
     transition: 0.3s;
   }
   div.project-card button:hover{
-    color: var(--dark-green);
-    box-shadow: 2px 4px var(--dark-green) ;
-    font-size: 1.3rem;
+    color: var(--orange);
+    box-shadow: 2px 4px yellowgreen ;
+    font-size: 1.1rem;
 
   }
   /* Modal styles */

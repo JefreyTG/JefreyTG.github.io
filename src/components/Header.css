@@ -12,12 +12,16 @@
   font-family: 'RETROTECH';
   src: url('../fonts/retrotech/RETROTECH.ttf') format('truetype');
 }
+@font-face {
+  font-family:'AR Techni' ;
+  src: url('../fonts/ar_techni/AR\ Techni.ttf');
+}
 
 :root {
-  --gray: #393e46;
+  --gray: #222e2e9d;
   --light-gray:#c7cdd6; 
   --black: #0000;
-  --orange: #f96d00;
+  --orange: #f94f00;
 }
 
 header.header {
@@ -28,6 +32,7 @@ header.header {
   height: 80px;
   border-radius: 15px;
   background: #000000;
+  z-index: 1000;
 }
 
 .logo {
