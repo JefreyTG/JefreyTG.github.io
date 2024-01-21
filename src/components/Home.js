@@ -13,9 +13,9 @@ const Home = () => {
   return (
     <div className="home-container">
       <div className="home-title-description-div">
-  <h1 className="home-title">Hola, Me llamo Jefrey...</h1>
+  <h1 className="home-title">Bienvenido !!</h1>
   <p className="home-description">
-    ¡Bienvenido a mi rincón digital! Soy un apasionado desarrollador frontend con habilidades en tecnologías web modernas. Explora mi portafolio para descubrir proyectos emocionantes y conocer más sobre mi enfoque para construir experiencias web excepcionales.
+    ¡Este es mi  rincón digital! Soy un apasionado desarrollador frontend con habilidades en tecnologías web modernas. Explora mi portafolio para descubrir proyectos emocionantes y conocer más sobre mi enfoque para construir experiencias web excepcionales.
   </p>
 </div>
 <div className="home-image">

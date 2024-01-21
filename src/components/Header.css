@@ -1,87 +1,64 @@
-:root {
-  --gradient1: linear-gradient(110deg, #000000 80%, #fdffff 20%);
-  --gradient1: linear-gradient(225deg, #000000 50%, #fdffff 50%);
-  --beige: #f3dfc1;
-  --dark-blue: #160f29;
-  --dark-green: #246a73;
-  --mid-green: #368f8b;
-  --light-brown: #ddbea8;
-  --mid-brown: #a99985;
-  --dark-red:rgb(158, 10, 10);
-
-
+@font-face {
+  font-family: 'DecoTech';
+  src: url('../fonts/decotech_2/DecoTech.ttf') format('truetype');
 }
 
-header.header{
-  position: absolute;
+@font-face {
+  font-family: 'RapidtechDemo';
+  src: url('../fonts/rapidtech/RapidtechDemoRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'RETROTECH';
+  src: url('../fonts/retrotech/RETROTECH.ttf') format('truetype');
+}
+
+:root {
+  --gray: #393e46;
+  --light-gray:#c7cdd6; 
+  --black: #0000;
+  --orange: #f96d00;
+}
+
+header.header {
+  position: fixed;
   align-items: center;
   top: 0;
   width: 100%;
   height: 80px;
-  background: #160f2918;
   border-radius: 15px;
+  background: #000000;
 }
+
 .logo {
-  width: 100px;
+  width: 80px;
   height: 80px;
   border-radius: 15px;
-  margin-left: 0%;
+  margin: 0%;
 }
 
 nav.nav-bar {
   width: 100%;
-  height: 80px;
+  height: auto;
   display: flex;
-  background: var(--gradient1);
+  background: var(--black);
   align-items: center;
   justify-content: space-between;
-  font-weight: 600;
+  font-weight: 400;
   position: fixed;
   padding-top: 0%;
   padding-bottom: 0%;
   top: 0;
   max-width: 100%;
   border-radius: 20px;
-  
   z-index: 1000;
   margin-bottom: 15px;
   margin-left: 0%;
   transition: box-shadow 0.3s ease;
 }
 
-
-.nav-bar.scrolled {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: 600;
-  position: fixed;
-  padding-top: 0%;
-  padding-bottom: 0%;
-  top: 0;
-  max-width: 100%;
-  height: 90px;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
-  z-index: 1000;
-  margin-bottom: 15px;
-  margin-left: 0%;
-  transition: box-shadow 0.4s ease;
-}
-
-.nav-bar.scrolled-top {
-  animation: textclip 6s linear infinite; /* Agrega la animación solo cuando esté en la parte superior */
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
-}
-
-
 .nav-links {
-  height: 40px;
+  height: fit-content;
   width: max-content;
   display: flex;
   align-items: center;
@@ -90,98 +67,59 @@ nav.nav-bar {
 
 .nav-links a {
   text-decoration: none;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  justify-content: space-between;
-  transition: color 0.3s ease;
+  font-size: 1.2rem;
+  font-weight: 400;
+  justify-content: space-around;
   margin-left: 30px;
-  /* Agrega transición al color del texto */
-
-}
-a.home-link, a.projects-link, a.videos-link, a.services-link{
-  color: var(--light-brown);
-}
-a.about-me-link, a.contact-link{
-  color: var(--mid-brown)
-}
-
-a.home-link:hover {
-  border-radius: 9px;
-  padding: 5px 5px;
-  background-color:rgba(201, 186, 186, 0.205);
-  font-size: 2.4rem;
-  color: var(--mid-green);
-  filter: brightness(116%);
-  transition: 0.5s;
-
-}
-
-a.projects-link:hover {
-  border-radius: 9px;
-  padding: 5px 5px;
-  font-size: 2.4rem;
-  color: var(--mid-green);
-  background-color:rgba(201, 186, 186, 0.205);
-  filter: brightness(116%);
-  transition: 0.5s;
-
-}
-
-a.services-link:hover {
-  border-radius: 9px;
-  padding: 5px 5px;
-  font-size: 2.4rem;
-  color: var(--mid-green);
-  background-color:rgba(201, 186, 186, 0.205);
-  filter: brightness(116%);
-  transition: 0.5s;
 
 
 }
-a.videos-link:hover {
-  border-radius: 9px;
-  padding: 5px 5px;
-  font-size: 2.4rem; 
-  color: var(--mid-green);
-  background-color:rgba(201, 186, 186, 0.205);
-  filter: brightness(116%);
-  transition: 0.5s;
 
- }
- a.about-me-link:hover {
-  border-radius: 9px;
-  padding: 5px 5px;
-  font-size: 2.4rem;
-  color: var(--mid-green);
-  background-color:rgba(201, 186, 186, 0.205);
-  filter: brightness(116%);
-  transition: 0.5s;
 
-  
- }
- a.contact-link:hover {
-  border-radius: 9px;
-  padding: 5px 5px;
-  font-size: 2.4rem;
-  color: var(--mid-green);
-  background-color:rgba(201, 186, 186, 0.205);
-  filter: brightness(116%);
-  transition: 0.5s;
+a.home-link,
+a.projects-link,
+a.videos-link,
+a.services-link,
+a.about-me-link,
+a.contact-link {
 
- }
+  color: rgb(101, 148, 30);
+  font-size: 1.1rem;
+  font-family: 'RapidtechDemo', sans-serif;
+  letter-spacing: 2px;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-radius: 10%;
+  border-width: 0%;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+a.home-link:hover,
+a.projects-link:hover,
+a.videos-link:hover,
+a.services-link:hover,
+a.about-me-link:hover,
+a.contact-link:hover {
+  color: var(--orange);
+  font-weight: 500;
+  border: 1px solid yellowgreen;
+
+}
 
 p.text-sm {
   width: fit-content;
   margin-right: 30px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  font-family: 'Agbalumo', system-ui;
-  color: var(--dark-red);
-  display: inline-block; /* Asegura que las letras se comporten como bloques en la animación */
+  font-family: 'RETROTECH';
+  color: yellowgreen;
+  display: inline-block;
+  /* Asegura que las letras se comporten como bloques en la animación */
 
 
 }
-p.text-sm:hover{
-  color:rgb(219, 3, 3);
+
+p.text-sm:hover {
+  color:var(--orange);
 }
