@@ -22,6 +22,15 @@ const Projects = () => {
       link: 'https://jefreytg.github.io/photography-portfolio/index.html', // Agrega el enlace del proyecto aquí
       // ... other fields as needed
     },
+    {
+      id: 3,
+      title: 'Website for ShoeSales',
+      description: 'This is fully responsive shoe sales  website created using CSS, HTML, JavaScript and Reactjs  you ara able to  navigate to all the different sections',
+      technologies: ['CSS3', 'HTML5'],
+      link: 'https://jefreytg.github.io/shoe-sales-website/', // Agrega el enlace del proyecto aquí
+    
+    }
+    
     // Add more projects as necessary
   ];
 
