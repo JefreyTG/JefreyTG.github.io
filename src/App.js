@@ -14,10 +14,10 @@ const App = () => {
         
         <Routes>
         
-        <Route path='/home' element={ <Home />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/videos' element={<Videos />}/>
-        <Route path='/projects' element={<Projects />}/>
+        <Route path='./components/Home.js' element={ <Home />} />
+        <Route path='./components/Services.js' element={<Services />} />
+        <Route path='./components/Videos.js' element={<Videos />}/>
+        <Route path='./components/Projects.js' element={<Projects />}/>
         </Routes>
     
       
