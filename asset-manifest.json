@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/JefreyTG/JefreyTG.github.io/static/css/main.9239b581.css",
+    "main.js": "/JefreyTG/JefreyTG.github.io/static/js/main.05684f1d.js",
+    "static/media/RapidtechDemoRegular.ttf": "/JefreyTG/JefreyTG.github.io/static/media/RapidtechDemoRegular.35945db2123f2f638d43.ttf",
+    "static/media/istockphoto-1856888927-1024x1024.jpg": "/JefreyTG/JefreyTG.github.io/static/media/istockphoto-1856888927-1024x1024.3d2d818302aae3356ff8.jpg",
+    "static/media/dx-card2.jpeg": "/JefreyTG/JefreyTG.github.io/static/media/dx-card2.e4d58e570f07aa855f9f.jpeg",
+    "static/media/rs-card2.jpeg": "/JefreyTG/JefreyTG.github.io/static/media/rs-card2.143cfe6e993c9d20f046.jpeg",
+    "static/media/AR Techni.ttf": "/JefreyTG/JefreyTG.github.io/static/media/AR Techni.824cafdfaa39fc84b722.ttf",
+    "static/media/ui-card.jpeg": "/JefreyTG/JefreyTG.github.io/static/media/ui-card.921cde7c6e1f61891333.jpeg",
+    "static/media/DecoTech.ttf": "/JefreyTG/JefreyTG.github.io/static/media/DecoTech.58f0e02c4eecec51b5f9.ttf",
+    "static/media/tg-tech-logo4.svg": "/JefreyTG/JefreyTG.github.io/static/media/tg-tech-logo4.bbeb6082438d12473058ecc1bc2bb143.svg",
+    "static/media/api-card2.jpeg": "/JefreyTG/JefreyTG.github.io/static/media/api-card2.c3a2d21e5f66543d67ba.jpeg",
+    "static/media/ux-card.jpeg": "/JefreyTG/JefreyTG.github.io/static/media/ux-card.ce0635d18d03e20fcedf.jpeg",
+    "static/media/RETROTECH.ttf": "/JefreyTG/JefreyTG.github.io/static/media/RETROTECH.66b256deffe071bdbeb3.ttf",
+    "index.html": "/JefreyTG/JefreyTG.github.io/index.html",
+    "main.9239b581.css.map": "/JefreyTG/JefreyTG.github.io/static/css/main.9239b581.css.map",
+    "main.05684f1d.js.map": "/JefreyTG/JefreyTG.github.io/static/js/main.05684f1d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9239b581.css",
+    "static/js/main.05684f1d.js"
+  ]
+}
